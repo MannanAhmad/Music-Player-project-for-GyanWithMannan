@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player By GyanWithMannan</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Poiret+One&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="audio-player" id="skin">
+        <div class="use_avatar">
+            <span class="live">
+                live <i class="fa fa-circle fa-fw"></i>
+            </span>
+            <span class="listeners">
+                35 <i class="fa fa-microphone fa-fw"></i>
+            </span>
+            <img src="assets/gyanwithmannan.png" alt="Gyanwithmannan logo">
+            <nav class="set">
+                <a href="#" title="Menu" class="dropdown-toggle">
+                    <i class="fa fa-cogs"></i>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="#" id="darkButton"></a>Dark</li>
+                    <li><a href="#" id="whiteButton"></a>Default</li>
+                    <li><a href="#" id="blueButton"></a>Blue</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="holder">
+            <div class="cover">
+                <img src="assets/cover.jpg" alt="coverPic">
+            </div>
+            <div class="audio-wrapper" id="player-container" href="javascript:;">
+                <audio id="player" preload="metadata">
+                    <source src="" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="player-controls scrubber">
+                <div>
+                    <div>
+                        <p class="title"></p>
+                    </div>
+                    <div class="range">
+                        <input type="range" id="dur" class="range" name="rng" min="0" max="1" step="0.00000001" value="0" style="width: 100%;">
+                    </div>
+                    <br>
+                    <span class="time start-time"></span>
+                    <span class="time end-time"></span>
+                    <br>
+                    <div class="ctrl">
+                        <div>
+                            <a href="#prev" class="ctrl_btn" id="next">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <span id="play-btn" class="fa fa-play"></span>
+                            <a href="#next" class="ctrl_btn" id="next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="volumeControl">
+                            <div class="wrapper">
+                                <i class="fa fa-volume-up"></i>
+                                <span class="outer">
+                                    <span class="inner"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </div>
+        <div class="action">
+            <div>
+                <a href="#" class="like shadow">
+                    <i class="fa fa-heart-o"></i>
+                </a>
+                <a href="#" class="like shadow">
+                    <i class="fa fa-share-alt"></i>
+                </a>
+                <a href="#" class="like shadow">
+                    <i class="fa fa-podcast"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
